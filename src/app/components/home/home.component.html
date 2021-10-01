@@ -1,3 +1,24 @@
+   <!-- create a blog form -->
+   <form (ngSubmit)="addNewBooks()" id="add-book">
+    <div class="form-group mb-2">
+      <label for="blog">Title</label>
+      <input type="text" class="form-control" id="blog" ngModel name="title" placeholder="" required
+        #title="ngModel">
+      <p class="text-info error-block"><small>Fill in the title!</small>
+      </p>
+    </div>
+    <div class="mb-2">
+      <label for="description">Author's name</label>
+      <input type="text">
+      <p class="text-info error-block" ><small>Author</small></p>
+    </div>
+    <div class="mb-2">
+      <label for="description">Book pic</label>
+      <input type="text">
+      <p class="text-info error-block" ><small>Insert image</small></p>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="">Add Book</button>
+
 <div class="card-group">
     <div class="card">
       <img src="https://img.wattpad.com/cover/247834276-352-k434052.jpg" class="card-img-top" alt="...">

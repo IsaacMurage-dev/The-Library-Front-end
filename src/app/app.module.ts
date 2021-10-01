@@ -14,7 +14,10 @@ import{MatIconModule} from '@angular/material/icon';
 import{MatStepperModule} from '@angular/material/stepper';
 import{MatFormFieldModule} from '@angular/material/form-field';
 import{MatInputModule} from '@angular/material/input';
-import{MatToolbarModule} from '@angular/material/toolbar'
+import{MatToolbarModule} from '@angular/material/toolbar';
+import { LoginComponent } from './components/login/login.component'
+import { HttpClientModule } from '@angular/common/http';
+import { LibraryComponent } from './components/library/library.component';
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import{MatToolbarModule} from '@angular/material/toolbar'
     RegisterComponent,
     SignInComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,7 @@ import{MatToolbarModule} from '@angular/material/toolbar'
     MatFormFieldModule,
     MatInputModule,
     MatToolbarModule,
+    HttpClientModule,
 
   ],
   providers: [],
